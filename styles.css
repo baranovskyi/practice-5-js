@@ -1,0 +1,81 @@
+
+.weather {
+    text-align: center;
+}
+
+.weather .list-inline {
+    display: inline-block;
+}
+
+.weather .list-inline-item {
+    color: #AAA;
+    text-align: center;
+    padding: .2em 1em;
+    border: 1px solid #FFF;
+}
+
+.weather .list-inline-item .day-name {
+    font-size: .9em;
+    font-weight: bold;
+}
+
+.weather .list-inline-item .temp {
+    font-size: .8em;
+}
+
+.weather .list-inline-item.active {
+    background-color: #FCFCFC;
+    border: 1px solid #DDD;
+}
+
+.weather .details {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.4em;
+    text-align: left;
+}
+
+.weather .details > * {
+    flex: 0 0 40%;
+}
+
+.weather .details > span.fa {
+    flex: 0 0 auto;
+}
+.weather .details > div.error {
+    flex: 0 0 100%;
+    text-align: center;
+}
+
+.weather .details .day-name {
+    font-weight: bold;
+    text-align: center;
+    flex: 0 0 20%;
+}
+
+.weather .details dl {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    overflow: visible;
+}
+
+.weather .details dt {
+    font-weight: normal;
+    font-size: 0.9em;
+    font-style: italic;
+    flex: 0 0 50%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.weather .details dd {
+    color: #666;
+    font-size: .9em;
+    flex:0 0 50%;
+    margin-left: auto;
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
